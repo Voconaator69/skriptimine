@@ -27,7 +27,7 @@ a) pane faili jälgimisele:
 git add failinimi
 
 b)lisa comment
-git commit - "panin faili jälgimisele ja x"
+git commit -m "panin faili jälgimisele ja x"
 
 c) lükka fail läbi
 git push -uf reponimi main
