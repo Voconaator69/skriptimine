@@ -1,12 +1,11 @@
 #!/bin/bash
 #Skript mis küsib kasutajalt ühe täisarvu ja siis ütleb kas arv on paaris või paaritu
 
-echo "Sisestage üks arv:"
-read arv
+arv=$1
 
 
-jagatis=$(expr "$arv" % 2)
-if [ $jagatis == 0 ]
+jagatis=$(expr $arv % 2 )
+if [[ $jagatis -eq 0 ]];
 then
 	echo "paaris arv"
 else
