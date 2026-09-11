@@ -10,7 +10,7 @@
 #
 
 
-echo "Kui vana te olete, sisestage number:"
+echo "Kui vana te olete, sisestage number (nt 19):"
 
 
 read vanus
@@ -30,5 +30,5 @@ if [[ $vanus =~ $tingimus ]]; then
 		echo Pole päris vanus
 	fi
 else
-	echo Sisestage vanus päris numbrina
+	echo Sisestage vanus numbrina
 fi
