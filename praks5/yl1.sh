@@ -27,7 +27,7 @@ if [[ $vanus =~ $tingimus ]]; then
 			echo Senjoor
 		fi
 	else
-		echo Pole päris vanus
+		echo Pole päris vanus, sisestage midagi järgmisest vahemikust: 0-200
 	fi
 else
 	echo Sisestage vanus numbrina
