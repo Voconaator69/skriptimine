@@ -2,12 +2,23 @@
 #Skript mis küsib kasutajalt ühe täisarvu ja siis ütleb kas arv on paaris või paaritu
 
 arv=$1
+if [ $# -ne 1 ];
+	then
+		echo "Palun Sisesta käivitamisel üks arv"
+		echo "Näide: ./täisarv 2"
+		exit 1
+fi
 
+
+if ! [[ $1 =~ ^-?[0-9]+$ ]]; then
+echo "Parameeter peab olema töisarv"
+exit 1
+fi
 
 jagatis=$(expr $arv % 2 )
 if [[ $jagatis -eq 0 ]];
-then
-	echo "paaris arv"
-else
-	echo "paaritu arv"
+	then
+		echo "paaris arv"
+	else
+		echo "paaritu arv"
 fi
