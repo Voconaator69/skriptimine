@@ -7,7 +7,7 @@
 
 
 
-echo -e "Sisestage kuu number \c"
+echo -e "Sisestage kuu number: \c"
 read kuu_nr
 
 if [ $kuu_nr -eq 1 -o $kuu_nr -eq 2 -o $kuu_nr -eq 12 ];
