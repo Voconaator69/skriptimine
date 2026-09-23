@@ -1,0 +1,4 @@
+#!/bin/bash
+#eesmärk on leida see fail arvutist ülesse ja väljutada selle sama faili sisu tagurpidi
+
+rev $0 | tac  #väljutab selle faili sisu tagurpidi
