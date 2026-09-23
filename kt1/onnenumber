@@ -1,0 +1,12 @@
+#!/bin/bash
+#Skripti eesmärk on leida kõik arvud mille ristsumma oleks lõpuks 7
+#Ehk 62431 = 6+2+4+3+1 = 16
+#16 = 1+6 = 7
+#digiruut = 1 + ((n-1) mod9)
+
+for i in {1000..9999}; do
+
+	if (( (1 + (i - 1) % 9) == 7 )); then
+		echo "$i"
+	fi
+done
