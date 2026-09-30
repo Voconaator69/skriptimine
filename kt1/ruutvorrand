@@ -1,0 +1,12 @@
+#!/bin/bash
+#Skript laseb kasutajal sisestada 3 numbrit mis oleksid ruut võrrandi a, b, ja c
+#ja arvutab nende x1 ja x2
+echo "Sisesta ruutvõrrand vormis $ a b c"
+read a b c
+
+
+x1=$(echo "scale=5; (-($b) + sqrt(($b)^2 - 4*$a*$c)) / (2*$a)" | bc -l)
+echo "x1= $x1"
+x2=$(echo "scale=5; (-($b) - sqrt(($b)^2 - 4*$a*$c)) / (2*$a)" | bc -l)
+echo "x2= $x2"
+

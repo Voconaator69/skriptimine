@@ -1,0 +1,26 @@
+#!/bin/bash
+#Luua skript mis genereerib $RANDOM muutuja abil 5 arvu vahemikus 1-50
+#ja salvestab need faili kus on võimalik kontrollida kas need on varem juba loodud
+#!/bin/bash
+
+
+rm -f numbrid.txt
+MAXCOUNT=5
+count=1
+
+
+while [ "$count" -lt $MAXCOUNT ]
+do
+  number=$((($RANDOM % 49) + 1 ))
+  echo $number >> numbrid.txt
+echo "$(awk '!seen[$0]++' numbrid.txt)" > numbrid.txt
+count=$(wc -l < numbrid.txt)
+	if [ $count -eq 5 ]; then
+	count == 5
+else
+continue
+fi
+done
+cat numbrid.txt
+
+
